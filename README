@@ -1,22 +1,26 @@
 Brushless DC Motor Controller Project
 ---------------------Started by Synco
 
-AIM: This project aims at writing improved firmware for some of the many brushless DC motor controllers available aimed at the hobbiest market.
+AIM:
+====
+This project aims at writing improved firmware for some of the many brushless DC motor controllers available aimed at the modellers/hobbiest market.
 More specifically the controllers using the Atmel ATmega8 AVR.
 
 Some improvements include:
-* specifically for making them micro-controller friendly
-  - ignore the low-voltage cut-off
-  - remove the features added for humans
+* making them micro-controller friendly
+  - ignore the low-voltage cut-off, power-on delays, safety interlocks...
+  - remove the features added for humans; scaling throttle range, configuration mode
   - allow using some protocol (I2C, UART, Pulse-width, etc)
   - get feed-back, ie, temperature, actual speed, current, errors, etc...
 * Run as either speed control or torque control
 * ...
 
 Here is a list of the currently supported devices:
-DYNAM ESC 30A
-Mystery FM30A
+Mystery FM30A - Good with UART debug 
+DYNAM ESC 30A - No UART possible
 (soon) HobbyKing 30A UBEC
 (verify) TowerPro25a ESC
 (todo) Turnigy
+
+
 
